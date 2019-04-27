@@ -8,6 +8,7 @@ namespace App\Http\Controllers\Index;
 
 
 use App\Http\Controllers\BaseController;
+use App\Models\Contact;
 use App\Models\Section;
 use App\Models\SectionPosition;
 
@@ -21,6 +22,9 @@ class IndexController extends BaseController
 
         }
         $sections = Section::where('position_id', $sectionPosition->id)->get();
-        return $this->customView(['sections' => $sections]);
+
+        // 获取联系方式
+        $contacts=Contact::all();
+        return $this->customView(['sections' => $sections, 'contacts'=>$contacts]);
     }
 }

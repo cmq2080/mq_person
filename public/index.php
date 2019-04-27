@@ -1,4 +1,5 @@
 <?php
+require __DIR__.'/../app/tc_function.php';
 
 /**
  * Laravel - A PHP Framework For Web Artisans

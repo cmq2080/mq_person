@@ -21,7 +21,7 @@
 		}
 		// alert($("#content-left").offset().top);
 
-//滚动聚焦
+        //滚动聚焦
 		$(window).scroll(function() {
 			var scrollTop = $(this).scrollTop();
 			if(scrollTop < tops[0]) {
