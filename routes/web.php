@@ -11,6 +11,6 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+
+/************首页部分路由************/
+Route::get('index/index', 'Index\IndexController@index');
