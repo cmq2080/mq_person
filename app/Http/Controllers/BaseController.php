@@ -30,10 +30,10 @@ class BaseController extends Controller
         $controllers = array_values(array_filter(explode('\\', $controller)));
         if (count($controllers) > 1) { // 有model
             $modelName      = $controllers[0];
-            $controllerName = trim($controllers[1], 'Controller');
+            $controllerName = substr($controllers[1], 0, -10);
         } else { // 无model
             $modelName      = '';
-            $controllerName = trim($controllers[0], 'Controller');
+            $controllerName = substr($controllers[0], 0, -10);
         }
 
         switch ($mode) {

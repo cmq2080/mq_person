@@ -42,9 +42,9 @@
 								<li>
 									<a href="{{url('index/leave-message')}}">给我留言</a>
 								</li>
-								{{--<li>--}}
-									{{--<a href="{{url('index/story')}}">故事墙<span class="label label-danger">HOT</span></a>--}}
-								{{--</li>--}}
+								<li>
+									<a href="{{url('index/anime')}}">番剧时间轴</a>
+								</li>
 							</ul>
 							<ul class="nav navbar-nav navbar-right">
 								<li>

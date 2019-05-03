@@ -11,4 +11,14 @@ class Project extends Model
 
     protected $table = 'project';
     public $dates = ['deleted_at'];
+
+    public function getStartedAtDesc($fmt = 'Y-m-d H:i:s')
+    {
+        return date($fmt, $this->started_at);
+    }
+
+    public function getEndedAtDesc($fmt = 'Y-m-d H:i:s')
+    {
+        return date($fmt, $this->ended_at);
+    }
 }

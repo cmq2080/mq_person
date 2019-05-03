@@ -24,7 +24,7 @@
 				<h2 class="panel-title">{{$project->name}}</h2>
 			</div>
 			<div class="panel-body">
-				<p class="date"><span>{{$project->start_on}}</span> ~ <span>{{$project->end_on}}</span></p>
+				<p class="date"><span>{{$project->getStartedAtDesc('Y.m.d')}}</span> ~ <span>{{$project->getEndedAtDesc('Y.m.d')}}</span></p>
 				<div class="desc">
 					{{$project->description}}
 				</div>

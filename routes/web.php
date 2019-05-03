@@ -14,3 +14,4 @@
 
 /************首页部分路由************/
 Route::get('index/index', 'Index\IndexController@index');
+Route::get('index/project', 'Index\ProjectController@index');
