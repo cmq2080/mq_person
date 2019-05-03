@@ -86,15 +86,15 @@ function tc_array_del(&$array, $del_value, $count = 0)
  * 描述：白名单优先于黑名单
  * Created at 2018/10/1 15:17 by 陈庙琴
  * @param       $array
- * @param array $while_list
+ * @param array $white_list
  * @param array $black_list
  * @return array
  */
-function tc_array_select($array, $while_list = [], $black_list = [])
+function tc_array_select($array, $white_list = [], $black_list = [])
 {
     $result = [];
-    if ($while_list) {
-        foreach ($while_list as $key) {
+    if ($white_list) {
+        foreach ($white_list as $key) {
             if (isset($array[$key])) {
                 $result[$key] = $array[$key];
             }

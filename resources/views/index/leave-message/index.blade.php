@@ -8,13 +8,25 @@
 @section('script')
 <script type="text/javascript">
 	function commit(){
-		var content=$.trim($("textarea[name='content']").val());
-		var from=$.trim($("input[name='from']").val());
-		if(content.length==0){
+		var content=$("textarea[name='content']").val().trim();
+		if(content.length===0){
 			$("#error1").slideDown();
 			return;
 		}
-		$("form").submit();
+		var formData=$("form").serializeArray();
+		$.ajax({
+			"type":"post",
+			"url":"{{url('index/leave-message/add')}}",
+			dataType:"json",
+			async:false,
+			data:formData,
+			success:function (res) {
+				alert(res.msg);
+				if(res.stat==0){
+					cancel();
+				}
+			}
+		});
 	}
 	
 	function cancel(){
@@ -33,7 +45,7 @@
 @endsection
 
 @section('content')
-<form class="form-horizontal" action="{{url($c.'/add')}}" method="post">
+<form class="form-horizontal" action="{{url('index/leave-message/add')}}" method="post">
 	<div class="form-group">
 		<label class="col-sm-1 control-label">内容</label>
 		<div class="col-sm-11">
