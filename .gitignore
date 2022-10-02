@@ -1,0 +1,21 @@
+# 开发环境
+.idea
+.vscode
+
+# 框架及第三方类库
+# vendor
+
+# 运行时模块
+runtime
+
+# 项目配置
+config
+.env
+
+# Composer相关
+composer.lock
+
+# 公共目录下的非静态资源
+public/static
+
+# 其他

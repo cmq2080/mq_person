@@ -1,0 +1,5 @@
+body {width: 100%;}
+._header,._banner,._content,._footer {width: 100%;}
+.header,.banner,.content,.footer {width: 1200px;margin: 0 auto;}
+._header {background: #222222;}
+.header nav{border-width: 0;margin-bottom: 0;}

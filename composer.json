@@ -1,0 +1,25 @@
+{
+    "name": "cmq2080/mq_person",
+    "authors": [
+        {
+            "name": "cmq2080",
+            "email": "1421224516@qq.com"
+        }
+    ],
+    "require": {
+        "liansu/core_plus": ">=0.0.1,<1.0.0",
+        "wenshizhengxin/phpqrcode": ">=0.0.1"
+    },
+    "repositories": {
+        "packagist": {
+            "type": "composer",
+            "url": "https://mirrors.aliyun.com/composer/"
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "api\\": "api/",
+            "app\\": "app/"
+        }
+    }
+}

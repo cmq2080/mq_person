@@ -1,0 +1,35 @@
+.page{width: 100%;overflow: hidden;}
+.page .sidebar{width: 230px;height: 100%;overflow:hidden;background: url(../../images/admin/bg-body.gif) top left repeat-y;position: absolute;top: 0;left: 0;}
+.sidebar h2{color:#FFFFFF;text-align: center;margin: 40px auto;}
+.sidebar p{text-align: center;color: #FFFFFF;font-size: 12px;margin: 5px auto;}
+.sidebar p span{color: #FFFFFF;font-size: 16px;font-style: italic;font-weight: bold;}
+.sidebar p a{color: #FFFFFF;font-size: 12px;text-decoration: underline;}
+.sidebar .menu{margin-left: 15px;margin-top: 15px;}
+.sidebar .menu li{width: 100%;margin:8px 0;background: url(../../images/admin/bg-menu-item-green.gif) right center no-repeat;text-align: right;}
+.sidebar .menu li a{display:block;padding:8px 15px;color: #FFFFFF;}
+.sidebar .menu li a:hover{font-weight: bold;}
+.sidebar .menu .current{background: url(../../images/admin/bg-menu-item-current.gif) right center no-repeat;}
+.sidebar .menu .current a{color: #333333;font-weight: bold;}
+
+.page .content{margin-left: 230px;padding: 40px 40px 0 40px;}
+.content a{font-size: 12px;margin-right: 5px;color:#57A000;}
+.content a.btn{color:#FFFFFF;background: #57A000;margin:0px 5px;padding: 5px;}
+.content input.btn{margin:0 15px 0 0;font-size: 14px;padding: 2px 6px;background: #E8E8E8;cursor: pointer;}
+.content .topic{margin-bottom: 20px;}
+.content .title-text{margin-bottom: 32px;}
+
+.content .main-table{width: 100%;text-align: center;}
+.main-table thead{background: #E0E0E0;}
+.main-table thead th{padding: 10px;}
+.main-table tbody td{padding: 10px 0;}
+.main-table tbody td a{font-size: 13px;}
+.main-table tbody td a:hover{color: #000000;text-decoration: underline;}
+#pagination ul{overflow: hidden;margin:20px 0 5px 0;}
+#pagination ul li{float: left;border: 1px #57A000 solid;margin-right: 10px;text-align: center;}
+#pagination ul li *{display:block;margin: 0 auto;font-size: 16px;padding: 2px 6.5px;}
+#pagination ul li a:hover{color: #FFFFFF;background: #57A000;text-decoration: none;}
+#pagination ul .active span{background: #57A000;color: #FFFFFF;}
+#pagination ul .disabled{border-color: #999999;}
+
+.content .form-table{width: auto;text-align: auto;}
+.form-table tr td{padding:10px 20px 10px 0;}
