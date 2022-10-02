@@ -1,0 +1,20 @@
+{
+    "name": "wenshizhengxin/phpqrcode",
+	"description": "PHP二维码生成类库",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Temple Chan",
+            "email": "1421224516@qq.com"
+        }
+    ],
+	"license": "MIT",
+    "require": {
+        "php": ">=5.3.0"
+    },
+    "autoload": {
+        "files": [
+            "autoload.php"
+        ]
+    }
+}

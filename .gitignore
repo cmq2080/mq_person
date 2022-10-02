@@ -1,32 +1,21 @@
 # 开发环境
 .idea
+.vscode
 
 # 框架及第三方类库
-vendor
-
-# 数据库模块
-database
+# vendor
 
 # 运行时模块
 runtime
 
-# 存储模块
-storage
-
-# 测试模块
-tests
-
 # 项目配置
 config
 .env
-.tags
-.tags_sorted_by_file
-Homestead.yaml
-Homestead.json
 
-# 公共目录下的图片及插件
+# Composer相关
+composer.lock
+
+# 公共目录下的非静态资源
 public/static
-
-# 许可及协议
 
 # 其他
